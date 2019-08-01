@@ -9,6 +9,6 @@
     when: ansible_os_family == "Debain" 
   - name: install java on amazon
     yum:
-      name: "{{ javaonredhat }}"
+      name: "{{ javaonamazon }}"
       state: present
     when: ansible_os_family == "RedHat"     
