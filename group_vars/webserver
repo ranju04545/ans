@@ -1,2 +1,2 @@
-javaonubuntu: oracle-java7-installer
+javaonubuntu: java-1.7.0-openjdk
 javaonamazon: java-1.8.0-openjdk
