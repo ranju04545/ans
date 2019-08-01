@@ -1,2 +1,2 @@
-javaonubuntu: java-1.7.0-openjdk
+javaonubuntu: openjdk-8-jre-headless
 javaonamazon: java-1.8.0-openjdk
