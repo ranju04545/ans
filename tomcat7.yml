@@ -1,0 +1,12 @@
+---
+- hosts: webserver
+  become: yes
+  tasks: 
+  - name: install tomcat7
+    apt:
+      name: tomcat7
+      state: present
+  - name: restart tomcat7
+    service:
+      name: tomcat7
+      stated: started
