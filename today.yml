@@ -1,0 +1,16 @@
+---
+- hosts: webserver
+  become: yes
+  tasks:
+  - name:install apache2
+    apt:
+      name: git
+      
+  - name: install tree
+    apt: 
+      namee: tree  
+    ignore_errors: yes
+
+  - name: install git
+    apt:
+      name: git      
