@@ -1,2 +1,2 @@
 javaonubuntu: openjdk-8-jre-headless
-javaonamazon: java-1.8.0-openjdk
+javaonredhat: java-1.8.0-openjdk
