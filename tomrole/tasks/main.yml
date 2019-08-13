@@ -9,7 +9,7 @@
 
 - name: copy tom config into nodes
   template:
-    src: templates/mytomconfig.j2
+    src: templates/tomconfig.j2
     dest: /etc/default/tomcat7
   notify: restarttomcat
 
@@ -24,13 +24,7 @@
 
 - name: copy tom user file into nodes 
   template: 
-    src: templates/mytomuser.j2
+    src: templates/tomuser.j2
     dest: /etc/tomcat7/tomcat-users.xml
   notify: restarttomcat
 
-- name: deploy java application
-  get_url:
-    url: https://maha1234.s3-us-west-2.amazonaws.com/mahaLogin.war
-    dest: /var/lib/tomcat7/webapps/mahaLogin.war
-    force_basic_auth: yes
-  notify: restarttomcat
